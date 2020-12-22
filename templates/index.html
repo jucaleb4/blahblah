@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pledge Room Check In</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <h1 style="text-align:center"><a href="https://docs.google.com/spreadsheets/d/1EDgVIpa6B_LJ22yGNOitb8QKHrpbqmsbpU7QbP_vHLQ/edit?usp=sharing">Locations</a></h1>
+    <h4 style="text-align:center">Pledges will wait in Mumford 103 after Part 8 :)</h4>
+    <p style="text-align:center">Make sure to refresh page to get current info</p>
+    <p style="text-align:center">Confused? Go to this <a href={{ url_for('about') }}>link</a> to learn how this works</p>
+    <table border="1">
+      <tr>
+        <td class="alternate1" style="text-align:center"> - Name -</td>
+        <td style="text-align:center">Leaving ARCH 120</td>
+        <td style="text-align:center">Part 1 - Armory 386</td>
+        <td style="text-align:center">Part 2 - Armory 384</td>
+        <td style="text-align:center">Part 3 - Armory 329</td>
+        <td style="text-align:center">Part 4 - Armory 330</td>
+        <td style="text-align:center">Part 5 - Armory 331</td>
+        <td style="text-align:center">Part 6 - Armory 333</td>
+        <td style="text-align:center">Part 7 - Armory 429</td>
+        <td style="text-align:center">Part 8 - Armory 430</td>
+        <td style="text-align:center">Done - Mumford 313</td>
+      </tr>
+
+      <tr>
+          <td>Test Dummy</td>
+          <td style="text-align:center" id="Test_Dummy_0"></td>
+          <td style="text-align:center" id="Test_Dummy_1"></td>
+          <td style="text-align:center" id="Test_Dummy_2"></td>
+          <td style="text-align:center" id="Test_Dummy_3"></td>
+          <td style="text-align:center" id="Test_Dummy_4"></td>
+          <td style="text-align:center" id="Test_Dummy_5"></td>
+          <td style="text-align:center" id="Test_Dummy_6"></td>
+          <td style="text-align:center" id="Test_Dummy_7"></td>
+          <td style="text-align:center" id="Test_Dummy_8"></td>
+          <td style="text-align:center" id="Test_Dummy_9"></td>
+      </tr>
+      <tr>
+          <td>Zain Usman</td>
+          <td style="text-align:center" id="Zain_Usman_0"></td>
+          <td style="text-align:center" id="Zain_Usman_1"></td>
+          <td style="text-align:center" id="Zain_Usman_2"></td>
+          <td style="text-align:center" id="Zain_Usman_3"></td>
+          <td style="text-align:center" id="Zain_Usman_4"></td>
+          <td style="text-align:center" id="Zain_Usman_5"></td>
+          <td style="text-align:center" id="Zain_Usman_6"></td>
+          <td style="text-align:center" id="Zain_Usman_7"></td>
+          <td style="text-align:center" id="Zain_Usman_8"></td>
+          <td style="text-align:center" id="Zain_Usman_9"></td>
+      </tr>
+      <tr>
+          <td>Yikun Lee</td>
+          <td style="text-align:center" id="Yikun_Lee_0"></td>
+          <td style="text-align:center" id="Yikun_Lee_1"></td>
+          <td style="text-align:center" id="Yikun_Lee_2"></td>
+          <td style="text-align:center" id="Yikun_Lee_3"></td>
+          <td style="text-align:center" id="Yikun_Lee_4"></td>
+          <td style="text-align:center" id="Yikun_Lee_5"></td>
+          <td style="text-align:center" id="Yikun_Lee_6"></td>
+          <td style="text-align:center" id="Yikun_Lee_7"></td>
+          <td style="text-align:center" id="Yikun_Lee_8"></td>
+          <td style="text-align:center" id="Yikun_Lee_9"></td>
+      </tr>
+      <tr>
+          <td>Jeff Galiotto</td>
+          <td style="text-align:center" id="Jeff_Galiotto_0"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_1"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_2"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_3"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_4"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_5"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_6"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_7"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_8"></td>
+          <td style="text-align:center" id="Jeff_Galiotto_9"></td>
+      </tr>
+      <tr>
+          <td>Megan Ray</td>
+          <td style="text-align:center" id="Megan_Ray_0"></td>
+          <td style="text-align:center" id="Megan_Ray_1"></td>
+          <td style="text-align:center" id="Megan_Ray_2"></td>
+          <td style="text-align:center" id="Megan_Ray_3"></td>
+          <td style="text-align:center" id="Megan_Ray_4"></td>
+          <td style="text-align:center" id="Megan_Ray_5"></td>
+          <td style="text-align:center" id="Megan_Ray_6"></td>
+          <td style="text-align:center" id="Megan_Ray_7"></td>
+          <td style="text-align:center" id="Megan_Ray_8"></td>
+          <td style="text-align:center" id="Megan_Ray_9"></td>
+      </tr>
+      <tr>
+          <td>Alexis Waite</td>
+          <td style="text-align:center" id="Alexis_Waite_0"></td>
+          <td style="text-align:center" id="Alexis_Waite_1"></td>
+          <td style="text-align:center" id="Alexis_Waite_2"></td>
+          <td style="text-align:center" id="Alexis_Waite_3"></td>
+          <td style="text-align:center" id="Alexis_Waite_4"></td>
+          <td style="text-align:center" id="Alexis_Waite_5"></td>
+          <td style="text-align:center" id="Alexis_Waite_6"></td>
+          <td style="text-align:center" id="Alexis_Waite_7"></td>
+          <td style="text-align:center" id="Alexis_Waite_8"></td>
+          <td style="text-align:center" id="Alexis_Waite_9"></td>
+      </tr>
+      <tr>
+          <td>Rahil Barar</td>
+          <td style="text-align:center" id="Rahil_Barar_0"></td>
+          <td style="text-align:center" id="Rahil_Barar_1"></td>
+          <td style="text-align:center" id="Rahil_Barar_2"></td>
+          <td style="text-align:center" id="Rahil_Barar_3"></td>
+          <td style="text-align:center" id="Rahil_Barar_4"></td>
+          <td style="text-align:center" id="Rahil_Barar_5"></td>
+          <td style="text-align:center" id="Rahil_Barar_6"></td>
+          <td style="text-align:center" id="Rahil_Barar_7"></td>
+          <td style="text-align:center" id="Rahil_Barar_8"></td>
+          <td style="text-align:center" id="Rahil_Barar_9"></td>
+      </tr>
+      <tr>
+          <td>Berkelee Asare</td>
+          <td style="text-align:center" id="Berkelee_Asare_0"></td>
+          <td style="text-align:center" id="Berkelee_Asare_1"></td>
+          <td style="text-align:center" id="Berkelee_Asare_2"></td>
+          <td style="text-align:center" id="Berkelee_Asare_3"></td>
+          <td style="text-align:center" id="Berkelee_Asare_4"></td>
+          <td style="text-align:center" id="Berkelee_Asare_5"></td>
+          <td style="text-align:center" id="Berkelee_Asare_6"></td>
+          <td style="text-align:center" id="Berkelee_Asare_7"></td>
+          <td style="text-align:center" id="Berkelee_Asare_8"></td>
+          <td style="text-align:center" id="Berkelee_Asare_9"></td>
+      </tr>
+      <tr>
+          <td>Sofia Takki</td>
+          <td style="text-align:center" id="Sofia_Takki_0"></td>
+          <td style="text-align:center" id="Sofia_Takki_1"></td>
+          <td style="text-align:center" id="Sofia_Takki_2"></td>
+          <td style="text-align:center" id="Sofia_Takki_3"></td>
+          <td style="text-align:center" id="Sofia_Takki_4"></td>
+          <td style="text-align:center" id="Sofia_Takki_5"></td>
+          <td style="text-align:center" id="Sofia_Takki_6"></td>
+          <td style="text-align:center" id="Sofia_Takki_7"></td>
+          <td style="text-align:center" id="Sofia_Takki_8"></td>
+          <td style="text-align:center" id="Sofia_Takki_9"></td>
+      </tr>
+      <tr>
+          <td>Allen Partin</td>
+          <td style="text-align:center" id="Allen_Partin_0"></td>
+          <td style="text-align:center" id="Allen_Partin_1"></td>
+          <td style="text-align:center" id="Allen_Partin_2"></td>
+          <td style="text-align:center" id="Allen_Partin_3"></td>
+          <td style="text-align:center" id="Allen_Partin_4"></td>
+          <td style="text-align:center" id="Allen_Partin_5"></td>
+          <td style="text-align:center" id="Allen_Partin_6"></td>
+          <td style="text-align:center" id="Allen_Partin_7"></td>
+          <td style="text-align:center" id="Allen_Partin_8"></td>
+          <td style="text-align:center" id="Allen_Partin_9"></td>
+      </tr>
+      <tr>
+          <td>Dominika Piczura</td>
+          <td style="text-align:center" id="Dominika_Piczura_0"></td>
+          <td style="text-align:center" id="Dominika_Piczura_1"></td>
+          <td style="text-align:center" id="Dominika_Piczura_2"></td>
+          <td style="text-align:center" id="Dominika_Piczura_3"></td>
+          <td style="text-align:center" id="Dominika_Piczura_4"></td>
+          <td style="text-align:center" id="Dominika_Piczura_5"></td>
+          <td style="text-align:center" id="Dominika_Piczura_6"></td>
+          <td style="text-align:center" id="Dominika_Piczura_7"></td>
+          <td style="text-align:center" id="Dominika_Piczura_8"></td>
+          <td style="text-align:center" id="Dominika_Piczura_9"></td>
+      </tr>
+      <tr>
+          <td>Amogh Bhoopalam</td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_0"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_1"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_2"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_3"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_4"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_5"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_6"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_7"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_8"></td>
+          <td style="text-align:center" id="Amogh_Bhoopalam_9"></td>
+      </tr>
+      <tr>
+          <td>Bethany Shiang</td>
+          <td style="text-align:center" id="Bethany_Shiang_0"></td>
+          <td style="text-align:center" id="Bethany_Shiang_1"></td>
+          <td style="text-align:center" id="Bethany_Shiang_2"></td>
+          <td style="text-align:center" id="Bethany_Shiang_3"></td>
+          <td style="text-align:center" id="Bethany_Shiang_4"></td>
+          <td style="text-align:center" id="Bethany_Shiang_5"></td>
+          <td style="text-align:center" id="Bethany_Shiang_6"></td>
+          <td style="text-align:center" id="Bethany_Shiang_7"></td>
+          <td style="text-align:center" id="Bethany_Shiang_8"></td>
+          <td style="text-align:center" id="Bethany_Shiang_9"></td>
+      </tr>
+      <tr>
+          <td>Katie Huynh</td>
+          <td style="text-align:center" id="Katie_Huynh_0"></td>
+          <td style="text-align:center" id="Katie_Huynh_1"></td>
+          <td style="text-align:center" id="Katie_Huynh_2"></td>
+          <td style="text-align:center" id="Katie_Huynh_3"></td>
+          <td style="text-align:center" id="Katie_Huynh_4"></td>
+          <td style="text-align:center" id="Katie_Huynh_5"></td>
+          <td style="text-align:center" id="Katie_Huynh_6"></td>
+          <td style="text-align:center" id="Katie_Huynh_7"></td>
+          <td style="text-align:center" id="Katie_Huynh_8"></td>
+          <td style="text-align:center" id="Katie_Huynh_9"></td>
+      </tr>
+      <tr>
+          <td>Yuna Lee</td>
+          <td style="text-align:center" id="Yuna_Lee_0"></td>
+          <td style="text-align:center" id="Yuna_Lee_1"></td>
+          <td style="text-align:center" id="Yuna_Lee_2"></td>
+          <td style="text-align:center" id="Yuna_Lee_3"></td>
+          <td style="text-align:center" id="Yuna_Lee_4"></td>
+          <td style="text-align:center" id="Yuna_Lee_5"></td>
+          <td style="text-align:center" id="Yuna_Lee_6"></td>
+          <td style="text-align:center" id="Yuna_Lee_7"></td>
+          <td style="text-align:center" id="Yuna_Lee_8"></td>
+          <td style="text-align:center" id="Yuna_Lee_9"></td>
+      </tr>
+      <tr>
+          <td>Erisa Farimani</td>
+          <td style="text-align:center" id="Erisa_Farimani_0"></td>
+          <td style="text-align:center" id="Erisa_Farimani_1"></td>
+          <td style="text-align:center" id="Erisa_Farimani_2"></td>
+          <td style="text-align:center" id="Erisa_Farimani_3"></td>
+          <td style="text-align:center" id="Erisa_Farimani_4"></td>
+          <td style="text-align:center" id="Erisa_Farimani_5"></td>
+          <td style="text-align:center" id="Erisa_Farimani_6"></td>
+          <td style="text-align:center" id="Erisa_Farimani_7"></td>
+          <td style="text-align:center" id="Erisa_Farimani_8"></td>
+          <td style="text-align:center" id="Erisa_Farimani_9"></td>
+      </tr>
+      <tr>
+          <td>Morgan Bentel</td>
+          <td style="text-align:center" id="Morgan_Bentel_0"></td>
+          <td style="text-align:center" id="Morgan_Bentel_1"></td>
+          <td style="text-align:center" id="Morgan_Bentel_2"></td>
+          <td style="text-align:center" id="Morgan_Bentel_3"></td>
+          <td style="text-align:center" id="Morgan_Bentel_4"></td>
+          <td style="text-align:center" id="Morgan_Bentel_5"></td>
+          <td style="text-align:center" id="Morgan_Bentel_6"></td>
+          <td style="text-align:center" id="Morgan_Bentel_7"></td>
+          <td style="text-align:center" id="Morgan_Bentel_8"></td>
+          <td style="text-align:center" id="Morgan_Bentel_9"></td>
+      </tr>
+      <tr>
+          <td>Zoe Nelson</td>
+          <td style="text-align:center" id="Zoe_Nelson_0"></td>
+          <td style="text-align:center" id="Zoe_Nelson_1"></td>
+          <td style="text-align:center" id="Zoe_Nelson_2"></td>
+          <td style="text-align:center" id="Zoe_Nelson_3"></td>
+          <td style="text-align:center" id="Zoe_Nelson_4"></td>
+          <td style="text-align:center" id="Zoe_Nelson_5"></td>
+          <td style="text-align:center" id="Zoe_Nelson_6"></td>
+          <td style="text-align:center" id="Zoe_Nelson_7"></td>
+          <td style="text-align:center" id="Zoe_Nelson_8"></td>
+          <td style="text-align:center" id="Zoe_Nelson_9"></td>
+      </tr>
+      <tr>
+          <td>Sana Khadilkar</td>
+          <td style="text-align:center" id="Sana_Khadilkar_0"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_1"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_2"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_3"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_4"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_5"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_6"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_7"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_8"></td>
+          <td style="text-align:center" id="Sana_Khadilkar_9"></td>
+      </tr>
+      <tr>
+          <td>Liam Herrebout</td>
+          <td style="text-align:center" id="Liam_Herrebout_0"></td>
+          <td style="text-align:center" id="Liam_Herrebout_1"></td>
+          <td style="text-align:center" id="Liam_Herrebout_2"></td>
+          <td style="text-align:center" id="Liam_Herrebout_3"></td>
+          <td style="text-align:center" id="Liam_Herrebout_4"></td>
+          <td style="text-align:center" id="Liam_Herrebout_5"></td>
+          <td style="text-align:center" id="Liam_Herrebout_6"></td>
+          <td style="text-align:center" id="Liam_Herrebout_7"></td>
+          <td style="text-align:center" id="Liam_Herrebout_8"></td>
+          <td style="text-align:center" id="Liam_Herrebout_9"></td>
+      </tr>
+
+    </table>
+  </body>
+
+  <script type="text/javascript">
+
+  // var xhr = new XMLHttpRequest();
+  //   xhr.open('GET', '{{ url_for('stream') }}');
+  //   xhr.send();
+  //   var position = 0;
+
+  $.ajax({
+              type: "GET",
+              url: '/stream',
+              success: function(response){
+                  console.log(response);
+                  // downString = response.downloadString;
+                  var t = JSON.parse(response)
+
+                  /*
+                  var name_list = ['Ali Hasan','Ben Rickenbaugh','Lara Iriarte','Andrea Krieter','Shuja Hussain',
+                      'Emilia Pieta','Jasmine Domingo','Eddie Kosinsky','Paul Kim','Ruhee Singh',
+                      'Ahmed Shehata','Paulina Rodriguez','Anthony Mendez','Rhea Sharma','Gopi Patel',
+                      'Vanessa Majula','Niki Wu','Sean Swalve','Aadith Vijey','Kinh Nguyen'];
+
+                  var name_list = ['Test Dummy', 'Jack Flanigan', 'Alexandra Wierzbiak', 'Leslie Acevedo', 'Faith Foster',
+                  'Harsha Nambri', 'Wan Ruan', 'Eric Xue', 'Prakashini Govindasamy',
+                  'Adam Armstead', 'Thomas Janas', 'Adamaris Nunez', 'Subhi Chandrasekaran',
+                  'David Lasota', 'Felicia Tan', 'Jeremy Starzec', 'Rishabh Sanghavi','Izabella Lach', 'Mark Alvarez']
+                      */
+                  var name_list = ['Test Dummy', 'Zain Usman', 'Yikun Lee', 'Jeff Galiotto', 'Megan Ray', 
+                      'Alexis Waite', 'Rahil Barar', 'Berkelee Asare', 'Sofia Takki', 'Allen Partin', 
+                      'Dominika Piczura', 'Amogh Bhoopalam', 'Bethany Shiang', 'Katie Huynh', 
+                      'Yuna Lee', 'Erisa Farimani', 'Morgan Bentel', 'Zoe Nelson', 
+                      'Sana Khadilkar', 'Liam Herrebout']
+
+                  for(var i=0; i<name_list.length; i++) {
+                      // console.log(name_list[i]);
+                      var name = name_list[i];
+                      // console.log(t[name]);
+
+                      for(var ct=0; ct<t[name]; ct++) {
+                          var idName = name.replace(" ","_")+"_"+ct.toString();
+                          console.log(idName);
+                          document.getElementById(idName).innerHTML = "x";
+                      }
+                  }
+              }
+          });
+
+  // function updateTable() {
+  //   for(var name in items) {
+  //     for(var ct=0; i<items[name]; ct++) {
+  //         var idName = name.replace(" ","_")+"_"+ct.toString();
+  //         document.getElementById(idName).innerHTML = "o";
+  //     }
+  // }
+  //
+  // var timer;
+  //   timer = setInterval(function() {
+  //       // check the response for new data
+  //       updateTable();
+  //   }, 30000);
+  </script>
+
+</html>
